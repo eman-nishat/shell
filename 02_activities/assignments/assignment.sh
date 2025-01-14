@@ -36,6 +36,7 @@ cp ./data/raw/user_*.log ./data/processed/user_logs
 cp ./data/raw/event_*.log ./data/processed/event_logs
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 rm ./data/raw/ipaddr_*
+rm ./data/raw/user_ipaddr_*
 rm ./data/processed/user_logs/user_ipaddr*
 # rf -rf ./data
 # change from coworker-change branch is a typo. should be rm -rf .data
